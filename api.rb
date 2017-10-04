@@ -3,10 +3,9 @@ class BookApi < Grape::API
 
   helpers do
     def books
-      @books ||= []
+      Application.books
     end
   end
-
 
   resource :books do
     get '/' do

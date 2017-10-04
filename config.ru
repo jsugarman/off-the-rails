@@ -1,5 +1,6 @@
 require 'grape'
 require_relative 'api'
+require_relative 'app'
 
 run BookApi
 
