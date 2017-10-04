@@ -1,15 +1,18 @@
 require 'grape'
+require_relative 'api'
 
-class MyApi < Grape::API
-  get '/' do
-    { message: 'hello' }
-  end
+run BookApi
 
-  route_param :name do
-    get do
-      { message: "hello #{params[:name]}"}
-    end
-  end
-end
+# class MyApi < Grape::API
+#   get '/' do
+#     { message: 'hello' }
+#   end
 
-run MyApi
+#   route_param :name do
+#     get do
+#       { message: "hello #{params[:name]}"}
+#     end
+#   end
+# end
+
+# run MyApi
