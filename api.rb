@@ -1,3 +1,5 @@
+require 'grape'
+
 class BookApi < Grape::API
   format :json
 
