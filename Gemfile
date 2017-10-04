@@ -6,7 +6,6 @@ git_source(:github) do |repo_name|
 end
 
 gem 'grape'
-gem 'pg'
 gem 'rack'
 gem 'sequel'
 gem 'sqlite3'
